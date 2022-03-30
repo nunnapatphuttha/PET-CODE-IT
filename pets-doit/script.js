@@ -3,9 +3,35 @@ const menuBtn = document.querySelector(".menu-btn");
 const navigation = document.querySelector(".navigation");
 
 
+document.querySelector('.nav-home').onclick =() =>{
+    navigation.classList.remove("active")
+    menuBtn.classList.remove("active")
+}
+
+document.querySelector('.nav-about').onclick =() =>{
+    navigation.classList.remove("active")
+    menuBtn.classList.remove("active")
+}
+
+document.querySelector('.nav-service').onclick =() =>{
+    navigation.classList.remove("active")
+    menuBtn.classList.remove("active")
+}
+
+document.querySelector('.nav-portfolio').onclick =() =>{
+    navigation.classList.remove("active")
+    menuBtn.classList.remove("active")
+}
+
+document.querySelector('.nav-contact').onclick =() =>{
+    navigation.classList.remove("active")
+    menuBtn.classList.remove("active")
+}
+
 menuBtn.addEventListener("click", ()=>{
     menuBtn.classList.toggle("active");
     navigation.classList.toggle("active");
+
 });
 
 //JS of video slide nav-btn
@@ -37,3 +63,20 @@ btns.forEach((btn, i)=>{
         slideNav(i);
     });
 });
+
+//JS of video  nav scroll
+var nav = document.querySelector('header');
+
+window.addEventListener('scroll',function(){
+    if(window.pageYOffset > 800){
+        nav.classList.add('header-scroll','shadow');
+    }else{
+        nav.classList.remove('header-scroll','shadow');
+    }
+})
+
+//JS Chat
+function actionToggle(){
+    var action = document.querySelector('.chat-btn');
+    action.classList.toggle('active')
+}
