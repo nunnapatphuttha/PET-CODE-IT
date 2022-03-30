@@ -68,7 +68,7 @@ btns.forEach((btn, i)=>{
 var nav = document.querySelector('header');
 
 window.addEventListener('scroll',function(){
-    if(window.pageYOffset > 800){
+    if(window.pageYOffset > 150){
         nav.classList.add('header-scroll','shadow');
     }else{
         nav.classList.remove('header-scroll','shadow');

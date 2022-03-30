@@ -39,7 +39,7 @@ header{
 
 header .brand{
     /* color: rgba(255, 69, 97, 1); */
-    color: #EEEE;
+    color: whitesmoke;
     font-size: 1.7em;
     font-weight: 900;
     /* text-transform: uppercase; */
@@ -371,7 +371,7 @@ section{
     justify-content: center;
     align-items: center;
     color: #FFF;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
     font-size: 1.5em;
 }
 
@@ -379,9 +379,15 @@ section{
     color: gray;
 }
 
-.chat-btn.active span {
-    transform: rotateZ(540deg);
-    transition: 1s ease;
+.chat-btn.active span{
+    transform: rotateZ(360deg) scale(1.2);
+    background: #222;
+    color: #FF4561;
+    border-radius: 50px;
+}
+
+.chat-btn span:hover{
+    color: #FF4561;
 }
 
 .chat-btn ul{
@@ -389,7 +395,7 @@ section{
     right: 50px;
     bottom: 55px;
     background: #EEE;
-    min-width: 250px;
+    min-width: 200px;
     padding: 0 20px;
     border-radius: 20px;
     opacity: 0;
@@ -401,7 +407,7 @@ section{
 .chat-btn.active ul{
     opacity: 1;
     visibility: visible;
-    transition: 0.3s ease-in-out;
+    transition: 0.3s;
 }
 
 .chat-btn ul li{
@@ -410,7 +416,7 @@ section{
     justify-content: flex-start;
     align-items: center;
     padding: 10px 0;
-    transition: 0.3s ease-in-out;
+    transition: 0.3s;
 }
 
 .chat-btn ul li a{
@@ -419,26 +425,33 @@ section{
 
 .chat-li-fa:hover a{
     color: #006AFF;
+    transition: 0.3s;
 }
 
 .chat-li-li:hover a{
     color: #00c300;
+    transition: 0.3s;
 }
 
 .chat-li-fa:hover{
-    font-size: 22px;
-    transition: 0.5s;
+    font-size: 20px;
+    transition: 0.1s;
 }
 
 .chat-li-li:hover{
-    font-size: 22px;
-    transition: 0.5s;
+    font-size: 20px;
+    transition: 0.1s;
 }
 
 .chat-btn ul li:not(:last-child){
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 /* Chat */
+
+/* details-service */
+
+
+/* details-service */
 
 /* Responsive */
 @media (max-width: 1040px){
