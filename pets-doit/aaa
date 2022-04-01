@@ -1,0 +1,29 @@
+<h4 style="color: #FF4561;">แพ็คเกจหลัก</h4>
+              <p>เว็บไซต์ช็อปปิ้ง ระบบตระกร้าสินค้า ระบบออเดอร์ ระบบแจ้งชำระเงิน และระบบขนส่ง</p>
+              <p style="font-size: 30px; color: #FF4561; font-weight: 600;">11,999฿<sup>&nbsp;<del style="color: rgb(255, 154, 171);">12,999฿</del></sup></p>
+              <hr>
+              <h4 style="color: #FF4561;">แพ็คเกจเสริม</h4>
+              <p>ระบบจัดการ (Administration)</p>
+              <p style="font-size: 30px; color: #FF4561; font-weight: 600;">+1,999฿<sup>&nbsp;<del style="color: rgb(255, 154, 171);">2,999฿</del></sup></p>
+              <hr>
+              <h4 style="color: #FF4561;">แพ็คเกจเสริม</h4>
+              <p>บริการออกแบบเว็บไซต์ (UX/UI Design)</p>
+              <p style="font-size: 30px; color: #FF4561; font-weight: 600;">+1,499฿<sup>&nbsp;<del style="color: rgb(255, 154, 171);">2,499฿</del></sup></p>
+              <hr>
+              <h4 style="color: #FF4561;">แพ็คเกจเสริม</h4>
+              <p>เว็บไซต์ 2 ภาษา (Two Language System)</p>
+              <p style="font-size: 30px; color: #FF4561; font-weight: 600;">+999฿<sup>&nbsp;<del style="color: rgb(255, 154, 171);">1,999฿</del></sup></p>
+            </div>
+            <div class="modal-footer" style="justify-content: space-between;">
+              <p>**ระยะเวลาปรับเปลี่ยนแก้ไข หลังจากเสร็จโปรเจค 1 เดือน**</p>
+              <div>
+              <a  
+                href="https://www.m.me/Alittlekittens" 
+                target="_blank" class="btn" 
+                style="background: #006AFF"
+                >
+                <i class="fa-brands fa-facebook-messenger"></i>
+                Messenger
+              </a>
+                <a type="button" class="btn" data-bs-dismiss="modal">Close</a>
+              </div>
