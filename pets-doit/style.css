@@ -538,9 +538,16 @@ section{
 }
 
 #iphone-detail img{
-    width: 100%;
-    height: 100%;
     animation:float 5s ease-in-out infinite;
+    padding-bottom: 50px;
+}
+
+.carousel-fade .carousel-item {
+  transition: 1s ease-in-out;
+}
+
+.carousel-fade .active.carousel-item {
+  transition: 1s ease-in-out;
 }
 
 .headertext-landing{
@@ -594,6 +601,46 @@ section{
     padding: 150px 0 300px;
 }
 
+#icon-html-detail{
+  color: #FF5733;
+  font-size: 40px;
+}
+
+#icon-css-detail{
+  color: #264de4;
+  font-size: 40px;
+}
+
+#icon-js-detail{
+  color: #F0DB4F;
+  font-size: 40px;
+}
+
+#icon-php-detail{
+  color: #787CB5;
+  font-size: 40px;
+}
+
+/* #icon-html-detail:hover{
+  transform: scale(1.1);
+  transition: 0.4s ease-in-out;
+}
+
+#icon-css-detail:hover{
+  transform: scale(1.1);
+  transition: 0.4s ease-in-out;
+}
+
+#icon-js-detail:hover{
+  transform: scale(1.1);
+  transition: 0.4s ease-in-out;
+}
+
+#icon-php-detail:hover{
+  transform: scale(1.1);
+  transition: 0.4s ease-in-out;
+} */
+
 /* details-service */
 
 .portfolio01-img img{
@@ -605,7 +652,7 @@ section{
         transform: translateY(0px);
     }
     50%{
-        transform: translateY(30px);
+        transform: translateY(25px);
     }
     100%{
         transform: translateY(0px);
