@@ -38,16 +38,16 @@ header{
 }
 
 header .brand{
-    /* color: rgba(255, 69, 97, 1); */
+    color: rgba(255, 69, 97, 1);
     color: whitesmoke;
     font-size: 1.7em;
     font-weight: 900;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     text-decoration: none;
 }
 
 .logo{
-    width: 50px;
+    width: 25vh;
 }
 
 header .navigation{
@@ -148,7 +148,13 @@ section{
     font-weight: 500;
     text-decoration: none;
     border-radius: 50px;
-    
+    transition: 0.2s ease-in-out;
+}
+
+.home .content a:hover{
+  background-image: linear-gradient(90deg, rgba(255, 69, 97, 1) 0%, rgba(255, 69, 136, 1) 100%);
+    color: #222;
+    transition: 0.2s ease-in-out;
 }
 
 .home .media-icons{
@@ -251,10 +257,12 @@ section{
 
 /* about */
 .about-section{
-    padding: 35px;
-    background: #222;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding: 200px 35px 200px;
+    background: linear-gradient(90deg, rgba(34, 34, 34, 0.9), rgba(1, 1, 1, 0.9) ), url(image/about-picture-2.jpg);
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .pattern-dots-md{
@@ -312,7 +320,8 @@ section{
 
 /* Service */
 #service {
-    padding-bottom: 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .top-card{
@@ -342,12 +351,19 @@ section{
     color: white;
     padding: 6%;
     box-shadow: 5px 5px 10px rgb(0 0 0 / 0.5);
+    transition: 0.3s ease-in-out;
 }
 
-#card-item{
+.card-item{
     display: flex;
     justify-content: center;
     margin-bottom: 100px;
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover{
+  transition: 0.3s ease-in-out;
+  transform: scale(1.2);
 }
 
 .card-title{
@@ -364,7 +380,7 @@ section{
     z-index: 999;
     position: fixed;
     bottom: 50px;
-    right: 50px;
+    right: 20px;
     width: 50px;
     height: 50px;
     background: linear-gradient(90deg, rgba(255, 69, 97, 1) 0%, rgba(255, 69, 136, 1) 100%);
@@ -459,77 +475,22 @@ section{
 /* Chat */
 
 /* details-service */
-.curve {
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.curve svg {
-    position: relative;
-    display: block;
-    width: calc(174% + 1.3px);
-    height: 117px;
-}
-
-.curve .shape-fill {
-    fill: #222;
-}
-
-
 .wave {
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
 .wave svg {
-    position: relative;
-    display: block;
-    width: calc(174% + 1.3px);
-    height: 117px;
+  position: relative;
+  display: block;
+  width: calc(165% + 1.3px);
+  height: 89px;
 }
 
 .wave .shape-fill {
-    fill: #222;
-}
-
-.wave-port {
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.wave-port svg {
-    position: relative;
-    display: block;
-    width: calc(174% + 1.3px);
-    height: 117px;
-}
-
-.wave-port .shape-fill {
-    fill: #222;
-}
-
-.wave2 {
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.wave2 svg {
-    position: relative;
-    display: block;
-    width: calc(175% + 1.3px);
-    height: 150px;
-}
-
-.wave2 .shape-fill {
-    fill: #222;
+  fill: #FFFFFF;
 }
 
 #video-detail video{
@@ -567,7 +528,7 @@ section{
     padding-bottom: 50px;
 }
 
-#webdev-header{
+.webdev-header{
     padding-top: 70px;
     padding-bottom: 70px;
 }
@@ -578,12 +539,19 @@ section{
 
 #ecommerce-detail{
     color: #EEE;
-    background-color: #222;
+    background: #222;
 }
 
 #video-detail-service{
     color: #EEE;
-    background-color: #222;
+    background: #222;
+    width: 100%;
+    height: 100%;
+}
+
+#video-detail-service video{
+  width: 100%;
+  height: 100%;
 }
 
 #video-ecommerce video{
@@ -592,33 +560,24 @@ section{
     padding: 100px 0 100px;
 }
 
-#video-package video{
-    width: 100%;
-    height: 100%;
-}
-
-#video-detail-service{
-    padding: 150px 0 300px;
-}
-
 #icon-html-detail{
   color: #FF5733;
-  font-size: 40px;
+  font-size: 25px;
 }
 
 #icon-css-detail{
   color: #264de4;
-  font-size: 40px;
+  font-size: 25px;
 }
 
 #icon-js-detail{
   color: #F0DB4F;
-  font-size: 40px;
+  font-size: 25px;
 }
 
 #icon-php-detail{
   color: #787CB5;
-  font-size: 40px;
+  font-size: 25px;
 }
 
 /* #icon-html-detail:hover{
@@ -685,6 +644,15 @@ section{
     border-radius: 20px;
     border: none;
 }
+
+#portfolio{
+    padding: 200px 0 250px;
+    background: linear-gradient(90deg, rgba(34, 34, 34, 0.9), rgba(1, 1, 1, 0.9) ), url(image/background-test.jpg);
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 /* portfolio */
 
 
@@ -693,7 +661,7 @@ section{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 2rem;
+    padding: 0.5rem;
     background-color: #fafafa;
     overflow: hidden;
     display: flex;
@@ -1046,7 +1014,7 @@ footer span a:hover{
     }
 
     header .navigation .navigation-item a:before{
-        background: #222;
+        background: #FF4561;
         height: 5px;
     }
 
