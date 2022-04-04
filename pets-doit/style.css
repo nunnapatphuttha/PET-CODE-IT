@@ -363,7 +363,7 @@ section{
 
 .card:hover{
   transition: 0.3s ease-in-out;
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 .card-title{
@@ -524,8 +524,7 @@ section{
 }
 
 #graphic-detail-header{
-    padding-top: 70px;
-    padding-bottom: 50px;
+    padding-top: 150px;
 }
 
 .webdev-header{
@@ -968,9 +967,22 @@ footer a:hover{
 footer span a{
   text-decoration: none;
   color: rgba(255, 69, 97, 1);
+  transition: 0.3s ease-in-out;
 }
 footer span a:hover{
   color: #eee;
+  transition: 0.3s ease-in-out;
+}
+
+.map-wrapper{
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.google-map{
+  width: 100%;
+  border-radius: 10px;
 }
 /* footer */
 
